@@ -1,4 +1,4 @@
-package com.example;
+package com.example.exceptions;
 
 import javax.servlet.http.HttpServletResponse;
 

@@ -1,4 +1,4 @@
-package com.example;
+package com.example.filters;
 
 import java.io.IOException;
 import java.text.ParseException;
@@ -15,6 +15,7 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.filter.GenericFilterBean;
 
+import com.example.JwtToken;
 import com.nimbusds.jwt.SignedJWT;
 
 public class JwtFilter extends GenericFilterBean {

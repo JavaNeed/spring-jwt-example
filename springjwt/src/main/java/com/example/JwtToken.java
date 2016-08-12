@@ -47,10 +47,12 @@ public class JwtToken implements Authentication {
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
 		String claimsString = (String) this.claims.getClaim("roles");
+		
 		List<GrantedAuthority> grantedAuthorities = new ArrayList<>();
 		if (claimsString != null && claimsString != "") {
 			String[] roles = claimsString.split(",");
 			System.out.println("JwtToken.getAuthorities.roles:" + roles);
+
 			for (String role : roles) {
 				System.out.println("JwtToken.getAuthorities.role:" + role);
 				grantedAuthorities.add(new SimpleGrantedAuthority(role));

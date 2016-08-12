@@ -1,4 +1,4 @@
-package com.example;
+package com.example.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -10,6 +10,9 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.authentication.AnonymousAuthenticationFilter;
+
+import com.example.JwtAuthenticationProvider;
+import com.example.filters.JwtFilter;
 
 @Configuration
 @EnableWebSecurity

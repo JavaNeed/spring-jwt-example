@@ -1,4 +1,4 @@
-package com.example;
+package com.example.controller;
 
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.core.Authentication;
@@ -17,6 +17,7 @@ public class TestController {
 	@RequestMapping("/securetest")
 	@Secured({ "ROLE_ADMIN" })
 	public String securetest() {
+		
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 		System.out.println("securetest:auth=" + auth);
 		return "securetest succeeded";
