@@ -70,3 +70,7 @@ The code is released under the [MIT license](LICENSE?raw=true).
 ---------------------------------------
 
 Please feel free to send me some feedback or questions!
+
+Reference URL:
+--------------
+https://github.com/szerhusenBC/jwt-spring-security-demo
