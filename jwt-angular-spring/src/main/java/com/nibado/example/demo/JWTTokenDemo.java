@@ -1,3 +1,5 @@
+package com.nibado.example.demo;
+
 import java.util.Date;
 
 import org.joda.time.DateTime;
@@ -20,10 +22,6 @@ public class JWTTokenDemo {
 	}
 	
 	public static void main(String[] args) {
-		/*final Claims claims = Jwts.parser()
-				.setSigningKey("secretkey")
-				.parseClaimsJws(gererateToken()).getBody();*/
-		
 		final Claims claims = Jwts.parser()
 				.setSigningKey("secretkey")
 				.parseClaimsJws(gererateToken()).getBody();
